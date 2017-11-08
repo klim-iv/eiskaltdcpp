@@ -1,26 +1,25 @@
-#!/bin/sh
-
-# Authors: Maxim Ignatenko, Dmitry Arkhipov
-# License: Public Domain
-# Created: 2013-06-18
-# Created: 2013-06-18
-# Version: N/A
-#
-# Description: script for personal use
-
-set -e
-
-OSXSDK="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk"
-OPTIONS="-DCMAKE_BUILD_TYPE=Release -DUSE_MINIUPNP=ON -DLOCAL_MINIUPNP=ON -DFREE_SPACE_BAR_C=ON -DWITH_SOUNDS=ON -DUSE_ASPELL=ON -DWITH_DHT=ON -DUSE_QT=OFF -DUSE_QT5=ON"
-COMPILER="-DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++"
-COMPILER_FLAGS="-DCMAKE_SYSTEM_PREFIX_PATH='/usr/local/;${OSXSDK}/' -DCMAKE_INCLUDE_PATH='${OSXSDK}/usr/include;/usr/local/include;/usr/include' -DCMAKE_CXX_FLAGS='-I${OSXSDK}/usr/include -I/usr/local/include -stdlib=libc++' -DCMAKE_C_FLAGS='-I${OSXSDK}/usr/include -I/usr/local/include' -DCMAKE_EXE_LINKER_FLAGS=-L/usr/local/lib"
-ARCH="-DCMAKE_OSX_DEPLOYMENT_TARGET=10.9 -DCMAKE_OSX_SYSROOT='${OSXSDK}'"
-GETTEXT="-DGETTEXT_SEARCH_PATH=/usr/local/opt/gettext/bin"
-OPENSSL="-DOPENSSL_ROOT_DIR=/usr/local/opt/openssl -DOPENSSL_INCLUDE_DIR=/usr/local/opt/openssl/include"
-
-eval cmake .. -DCMAKE_OSX_ARCHITECTURES=\'x86_64\' ${ARCH} ${COMPILER_FLAGS} ${COMPILER} ${OPTIONS} ${GETTEXT} ${OPENSSL} "$@"
-
-make -j 4
-
-cpack -G DragNDrop
-
+U2FsdGVkX18SNFZ4kAAAAIHXLxUD09EfyBkDtL7MojP57ZvE/t/7o4FPFRmgjyUW
+v3j+tpuBBBWhuviIdOrNNTRgw1USImiUrb4RHV9QwIKacOq/yfGhW6CKDDkpWD/s
+3q8TSUYUwiVvXOka33SYVKV9b9BRnqltTTjiTP8k07hiSSjr5NZ2mozJ1U2LKvQM
+gwJ+sKFBgRcUgsLtK7wXRK7+KZwO0cqfjiRwsxBm0CdIWjP1KbATbBVj8RqH2ZPE
+zb1Pz6YhQ7UY0W/n05cpQovG5T3q2vEwfxaW8az4S18WQrfZyxYeV1M2+5q0uZcf
+mcl1yoD9S24zW8LzP1skHKDKzrIcQGzcR306TnibZ3hOp1MHksJtCtFjsrCqJkFN
+ozpn9eu7nTaK8bCaAslU/3apeTkCkA2jPVK7t37xwXG74gPNXsCO28VGxSzbh2K1
+9lN8RHhw5y9pbddeNyIYs5ZCZJQHmnYdZi58pZcZtGS14Ef9VOIaWW4saekY/x/9
+JI3+h0AYWy0RsFJ7ijQ7y+lwsLuK858yl+qw5xmlIzpLrOnRG/EGrKhmPWvOBq3c
+rvgtoG5ftODaY67HO8vbG0pBQfFPjoEOKNsleKwHi50XMn99Z9PzlU6OQmNR4uoJ
+29ZjLSof1C3vyEjkzxWP9mGixmsdp2zWoOm0Jf1lzuIDLY6ZI7TPIWOaKXZCom6P
+nDi/HkR9CrFQM/7rttXzeLR6+hvhtoZUamPyNq90e3t0MbvaDj7IKk87VcJqUJJI
+ebOjSw60ehG8uqBik+LDbKvg+plJq90X3xNPu1Xy1anr9/trlk+b9HT03TzKJIBc
+mbZykuHazcVxxCMGQip1tOOCR2Eue0hnadxISka6zgxZcHerzfnpM9zeLrwr5Qnr
+mhUmEaBsEimspTkwwExTAHKIa5Xg9MnWAkqnM4c+NpkR2BDg3EKI0RUV3aeSCPI+
+49vQq0dx9NM5kHhuoReMjsStRY13p4CyLDujGLXGx9yW6LY4UBFl0HL1iBU1sAmt
+Y6YZeaSBQBwhrp/36hBW41ltfx0gCE558pRVI8rDUJ/Pgxue72i710YX20Phjimf
+Ehz9pRXmTRyKnwF7ZVtGXguWRlClhTIjmxbjS0yBsWgg2vUFMBME8+uEqKnp0LEr
+5rc/50ZJH3u70v81Qnv2Ln1xTKLEybdAGVsyr8qmnA76AmJXbQvr1gEEZtjUnSYu
+wf3gwYsjeFMyFXnXZzjMs+b6TtNiledvrJzfREmMp3J72pSCE9bIXldut4h1sG2G
+/VGfp1yXENXJsLQHngWbxVycbESibuIQ6naWRRJ2GRFlVgjwYqHgZm1e7S3tytbm
+xZ0gd6XCYy5Rz2ZGQT46nVCcwQD5mz8qqnPitA2v2TfdpEo/4y8vw4WFgFq94PnP
+2JRX0FtCou+fbe/Vu9Bwrm4rjZXto6b/IJzQIRnVfnRCdkggGfLl2qZY+Q9pD+Ew
+tTupSVpcl3wI0rU7Vd1G6r+6QR1ktQGRM94K5kGUsOh2CHU9nK+cZAalZPgGJiUV
+A+GLroB3bPVKhsHQwzY4fg==
